@@ -3,7 +3,7 @@ import { Subject } from 'rxjs';
 
 export class UserService {
   private users: User[] = [
-    new User( 'Aubin', 'Puyoou', 'aubin.puyoou@gmail.com', 'Whisky', ['Boxing', 'Play the guitar', 'F*****'] )
+    new User( 'Aubin', 'Puyoou', 'aubin.puyoou@gmail.com', 'Whisky', ['Coding', 'Boxing', 'Play the guitar' )
   ];
   userSubject = new Subject<User[]>();
 
