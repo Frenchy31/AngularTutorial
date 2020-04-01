@@ -1,6 +1,5 @@
 import { Component, OnInit} from '@angular/core';
-import {interval, Observable} from 'rxjs';
-import {error} from '@angular/compiler/src/util';
+import {interval} from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +7,7 @@ import {error} from '@angular/compiler/src/util';
   styleUrls: ['./app.component.scss']
 })
 
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
 
   // tslint:disable-next-line:use-lifecycle-interface
   secondes: number;

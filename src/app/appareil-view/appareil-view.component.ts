@@ -10,16 +10,17 @@ import {Appareil} from '../models/Appareil.model';
 })
 export class AppareilViewComponent implements OnInit, OnDestroy {
 
-  appareils: any[];
+  appareils: Appareil[];
   lastUpdate = new Date();
   appareilSubscription: Subscription;
-  appareilsSubject = new Subject<any[]>();
+  appareilsSubject = new Subject<Appareil[]>();
 
   constructor( private appareilService: AppareilService ) {
 
   }
 
   ngOnInit() {
+    this.appareilService.getAppareilsFromServer();
     this.appareilSubscription = this.appareilService.appareilsSubject.subscribe(
       (appareils: Appareil[]) => {
         this.appareils = appareils;
