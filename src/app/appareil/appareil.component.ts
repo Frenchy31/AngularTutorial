@@ -25,10 +25,7 @@ export class AppareilComponent {
     }
   }
 
-  allumer() {
-    this.appareilService.allumerUn(this.indexAppareil);
-  }
-  eteindre() {
-    this.appareilService.eteindreUn(this.indexAppareil);
+  supprimer() {
+    this.appareilService.supprimerUn(this.indexAppareil);
   }
 }

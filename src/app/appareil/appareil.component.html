@@ -8,5 +8,7 @@
   <button class="btn btn-danger"
           *ngIf="statutAppareil==='allumé'"
           (click)="onSwitch()">Eteindre</button>
+  <button class="btn btn-danger"
+          (click)="supprimer()">Supprimer</button>
   <a [routerLink]="[idAppareil]">Détail</a>
 </li>
